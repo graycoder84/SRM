@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section class="uk-container uk-height-1-1 uk-margin-auto-left uk-margin-auto-right">
+        <div class="uk-grid-collapse uk-flex uk-flex-middle uk-height-1-1 uk-child-width-1-1 uk-child-width-1-2@m" data-uk-grid="true">
+            <div class="uk-padding">
+                {% block left %}
+
+                {% endblock %}
+            </div>
+            <div class="uk-padding uk-height-viewport">
+                {% block right %}
+                    <div>
+                        {% block right_image %}
+
+                        {% endblock %}
+                    </div>
+
+                    <h2 class="ccs-supplier-reg-title">
+                        {% block right_title %}
+
+                        {% endblock %}
+                    </h2>
+
+                    {% block right_description %}
+
+                    {% endblock %}
+                {% endblock %}
+            </div>
+
+        </div>
+    </section>
+{% endblock %}

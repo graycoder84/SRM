@@ -1,0 +1,61 @@
+{% extends 'base-reg2.html' %}
+
+{% block background %}
+
+    <div class="uk-width-1-1">
+        <div class="uk-background-contain uk-background-muted uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(/static/images/page-1.png)">
+            <p class="uk-h4"></p>
+        </div>
+    </div>
+
+{% endblock %}
+{% block title %}
+    Register
+{% endblock %}
+
+{% block right_image %}
+    <img src="/static/images/CCS-logo-1-1.png" alt="">
+{% endblock %}
+
+{% block right_title %}
+    <h3> Registration to Supplier Management Corporation Portal</h3>
+{% endblock %}
+
+{% block right_description %}
+    <p>
+        Pleas Validate your information, select your office and create a new password
+    </p>
+    <p>
+        Already have an account? <a href="login.html">Login</a>
+    </p>
+{% endblock %}
+
+{% block left %}
+    <form class="ccs-background-white uk-padding uk-margin ccs-form">
+        <h4 class="uk-text-center ccs-supplier-reg-title">Sign Up</h4>
+        <p></p>
+        <div class="uk-margin">
+            <label for="full_name">Full Name</label>
+            <input type="text" id="full_name" name="full_name" class="uk-input ccs-input" value="Sasha Burton">
+        </div>
+        <div class="uk-margin">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" class="uk-input ccs-input" value="C.E.O">
+        </div>
+        <div class="uk-margin">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="uk-input ccs-input" value="sasha@burton.io">
+        </div>
+        <div class="uk-margin">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" class="uk-input ccs-input">
+        </div>
+        <div class="uk-margin">
+            <input type="checkbox" id="tac" name="tac" class="uk-checkbox">
+            <label for="tac">Click here to accept our Terms and Conditions</label>
+        </div>
+        <div class="uk-margin">
+            <button class="uk-button uk-button-primary ccs-button ccs-button-primary uk-width-1-1">Submit</button>
+        </div>
+    </form>
+{% endblock %}
